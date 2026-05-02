@@ -9,7 +9,7 @@ public class Account {
     public Account(String id, String password) {
         this.id = id;
         this.password = password;
-        this.status = AccountStatus.ACTIVE; // new accounts start as active
+        this.status = AccountStatus.ACTIVE;
     }
 
     public boolean resetPassword(String newPassword) {
