@@ -12,7 +12,6 @@ public class CashTransaction extends BillTransaction {
             throw new IllegalArgumentException("Cash tendered must be greater than zero!");
         }
 
-        // cash given must be enough to cover the amount
         if (cashTendered < amount) {
             throw new IllegalArgumentException(
                     "Not enough cash! Amount due: $" + amount +
